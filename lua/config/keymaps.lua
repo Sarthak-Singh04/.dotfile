@@ -10,6 +10,9 @@ discipline.cowboy()
 local keymaps = vim.keymap
 local opts = { noremap = true, silent = true }
 
+--undo key
+keymaps.set("i", "<leader>u", "<cmd>undo<cr>")
+
 -- Increment/decrement
 keymaps.set("n", "+", "<C-a>")
 keymaps.set("n", "-", "<C-x>")
