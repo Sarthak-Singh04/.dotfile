@@ -20,7 +20,18 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = {
       colorscheme = "solarized-osaka",
     } },
-    -- import/override with your plugins
+
+    -- JavaScript/TypeScript
+    { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.formatting.prettier" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+
+    -- Python linting and formatting
+    { import = "lazyvim.plugins.extras.formatting.black" },
+    { import = "lazyvim.plugins.extras.lang.python" },
+
+    -- Import/override with your plugins
     { import = "plugins" },
   },
   defaults = {

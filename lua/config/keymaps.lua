@@ -3,6 +3,10 @@
 -- Add any additional keymaps here
 --
 --
+local discipline = require("config.cowboy.discipline")
+
+discipline.cowboy()
+
 local keymaps = vim.keymap
 local opts = { noremap = true, silent = true }
 
@@ -31,8 +35,8 @@ keymaps.set("n", "sj", "<C-w>j")
 keymaps.set("n", "sl", "<C-w>l")
 
 -- Resize window
-keymaps.set("n", "<C-w><left>", "<C-w><")
-keymaps.set("n", "<C-w><right>", "<C-w>>")
+keymaps.set("n", "<C-w><left>", "<C-w>>")
+keymaps.set("n", "<C-w><right>", "<C-w><")
 keymaps.set("n", "<C-w><down>", "<C-w>-")
 
 -- Diagnostic
